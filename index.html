@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTakToe</title>
+
+    <!--CSS Linked Files-->
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+    <script src="Script/game.js"></script>
+</head>
+
+<body>
+    <!--Header-->
+    <header id="TitleBar">
+        <div>
+            <h1>TikTakToe</h1>
+        </div>
+    </header>
+
+    <!-- Play Button -->
+    <div id="Play_button_field">
+        <button id="PlayButton" onclick="startGame()">Play✨</button>
+    </div>
+    <div id="Again_buttons_field">
+        <button id="RetryButton" onclick="restartGame()">PlayAgain🚩</button>
+        <button id="ResetButton" onclick="resetGame()">Reset❓</button>
+    </div>
+    <!-- Player Status Area -->
+    <div id="PlayersStatusArea">
+        <div id="PlayersBar">
+            <div>
+                <p>Player 1:</p>
+                <p class="score" id="player1ScoreField">0</p>
+            </div>
+            <div>
+                <p>Player 2:</p>
+                <p class="score" id="player2ScoreField">0</p>
+            </div>
+        </div>
+
+        <!-- Status Bar -->
+        <div id="StatusBar">
+            <p id="Status">Let's Play a Game</p>
+        </div>
+    </div>
+    <!-- Players Score Bar -->
+    <div id="PlayerArena">
+
+        <!-- Main Game Board -->
+        <main>
+            <div id="board">
+                <div>
+
+                    <div class="blocks" id="block-1" value="1" onclick="proceedGame(1, 'block-1' )"></div>
+                    <div class="blocks" id="block-2" value="2" onclick="proceedGame(2 , 'block-2' )"></div>
+                    <div class="blocks" id="block-3" value="3" onclick="proceedGame(3, 'block-3' )"></div>
+
+                    <br>
+                    <div class="blocks" id="block-4" value="4" onclick="proceedGame(4, 'block-4' )"></div>
+                    <div class="blocks" id="block-5" value="5" onclick="proceedGame(5, 'block-5' )"></div>
+                    <div class="blocks" id="block-6" value="6" onclick="proceedGame(6, 'block-6' )"></div>
+                    <br>
+
+                    <div class="blocks" id="block-7" value="7" onclick="proceedGame(7, 'block-7' )"></div>
+                    <div class="blocks" id="block-8" value="8" onclick="proceedGame(8, 'block-8' )"></div>
+                    <div class="blocks" id="block-9" value="9" onclick="proceedGame(9, 'block-9' )"></div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

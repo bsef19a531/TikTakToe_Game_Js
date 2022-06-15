@@ -1,0 +1,73 @@
+/* BLOCKS STYLES */
+.blocks
+{
+    box-sizing: border-box;
+    height: 120px;
+    width: 120px;
+    /* outline: thick solid black; */
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 115px;
+    color: rgb(255, 179, 0);
+    font-family: 'Londrina Solid', cursive;
+    text-shadow: 1px 1px black;
+}
+
+.blocks:hover
+{
+    cursor: pointer;
+}
+
+/* BLOCKS COLORING */
+#block-1
+{   
+    /* border-right: 5px solid black ; */
+    outline: thick solid black;
+    
+}
+#block-2
+{
+    /* border-right: 5px solid black ; */
+    outline: thick solid black;
+}
+#block-3
+{
+    /* border-right: 5px solid black ; */
+    outline: thick solid black;
+}
+#block-4
+{
+    /* border-top: 5px solid black ;
+    border-right: 5px solid black ; */
+    outline: thick solid black;
+}
+#block-5
+{
+    /* border-top: 5px solid black ;
+    border-right: 5px solid black ; */
+    outline: thick solid black;
+}
+#block-6
+{
+    /* border-top: 5px solid black ; */
+    outline: thick solid black;
+}
+#block-7
+{
+    /* border-top: 5px solid black ; */
+    /* border-right: 5px solid black ; */
+    outline: thick solid black;
+}
+#block-8
+{
+    /* border-top: 5px solid black ;
+    border-right: 5px solid black ; */
+    outline: thick solid black;
+}
+#block-9
+{
+    /* border-top: 5px solid black ; */
+    outline: thick solid black;
+}

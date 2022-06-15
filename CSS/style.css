@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* BODY */
+body {
+    background: rgb(204, 204, 204);
+}
+
+/* TITLE BAR STYLES */
+#TitleBar {
+    background-color: rgb(215, 0, 235);
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Pacifico', cursive;
+}
+
+#TitleBar h1 {
+    color: rgb(255, 179, 0);
+    text-shadow: 10px 10px 10px rgb(49, 49, 49);
+}
+
+/* PLAY BUTTON */
+#Play_button_field {
+    text-align: center;
+    visibility: visible;
+}
+
+#Again_buttons_field {
+    text-align: center;
+    visibility: visible;
+}
+
+#PlayButton {
+    height: 120px;
+    width: 300px;
+    border-radius: 5px;
+    margin: 40px 0px;
+    font-size: 80px;
+    font-family: 'Londrina Solid', cursive;
+    border: none;
+    background: rgb(61, 214, 0);
+    color: white;
+}
+
+#PlayButton:hover {
+    color: black;
+    background: rgb(255, 179, 0);
+    cursor: pointer;
+}
+
+/* Retry Button  */
+#RetryButton {
+    height: 120px;
+    width: 500px;
+    border-radius: 5px;
+    margin: 40px 0px;
+    font-size: 80px;
+    font-family: 'Londrina Solid', cursive;
+    border: none;
+    background: rgb(215, 0, 235);
+    color: white;
+}
+
+#RetryButton:hover {
+    color: black;
+    background: rgb(255, 179, 0);
+    cursor: pointer;
+}
+
+/* Reset Button */
+#ResetButton {
+    height: 120px;
+    width: 500px;
+    border-radius: 5px;
+    margin: 40px 0px;
+    font-size: 80px;
+    font-family: 'Londrina Solid', cursive;
+    border: none;
+    background: rgb(61, 214, 0);
+    color: white;
+}
+
+#ResetButton:hover {
+    color: black;
+    background: rgb(255, 179, 0);
+    cursor: pointer;
+}
+
+/* Reset Buttons Field Visibility */
+#Again_buttons_field {
+    display: none;
+}
+
+/* PLAYER ARENA */
+#PlayerArena,
+#PlayersStatusArea {
+    display: none;
+}
+
+
+/* PLAYERS BAR */
+#PlayersBar {
+    background: rgb(255, 179, 0);
+    color: white;
+    text-shadow: 1px 1px black;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Pacifico', cursive;
+}
+
+#PlayersBar div,
+#PlayersBar p {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 2px 5px;
+}
+
+#PlayersBar .score {
+    color: black;
+}
+
+/* STATUS BAR */
+#StatusBar {
+    margin: 0;
+    padding: 5px;
+    background: rgb(61, 214, 0);
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Londrina Solid', cursive;
+}
+
+/* MAIN BOARD */
+#board {
+    background: rgb(204, 204, 204);
+    margin: auto;
+    padding: 10px 10px;
+}
+
+#board div {
+    text-align: center;
+}
+
+/* BLOCKS STYLES */
+.blocks {
+    box-sizing: border-box;
+    height: 120px;
+    width: 120px;
+    outline: 1px solid black;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 115px;
+    color: rgb(255, 179, 0);
+    font-family: 'Londrina Solid', cursive;
+    text-shadow: 1px 1px black;
+}
+
+.blocks:hover {
+    cursor: pointer;
+}
