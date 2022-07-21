@@ -163,10 +163,16 @@ function restartGame() {
     document.getElementById('PlayerArena').style.display = 'contents';
     document.getElementById('PlayerArena').style.pointerEvents = 'auto';
 
-    document.getElementById('Status').innerHTML = "Another Game, Player 1 turn";
+    // document.getElementById('Status').innerHTML = "Another Game, Player 1 turn";
 
     // SEttting Required variables to start again
-    playerTurn = true; //To switch and track Player
+    playerTurn = selectRandomPlayer(); //To switch and track Player
+    if (playerTurn) {
+        document.getElementById('Status').innerHTML = "Another Game, Player 1 turn";
+    }
+    else {
+        document.getElementById('Status').innerHTML = "Another Game, Player 2 turn";
+    }
     player1WinCalculation = []; //Calculate the moves of the player 1
     player2WinCalculation = []; //Calculate the moves of player 2
     // Keep track of the blocks
@@ -185,7 +191,7 @@ function resetGame() {
     // SEttting Required variables to start again
     player1Score = 0; //Score of Player 1
     player2Score = 0; //Score of Player 2
-    playerTurn = true; //To switch and track Player
+    playerTurn = selectRandomPlayer(); //To switch and track Player
     player1WinCalculation = []; //Calculate the moves of the player 1
     player2WinCalculation = []; //Calculate the moves of player 2
     // Keep track of the blocks
