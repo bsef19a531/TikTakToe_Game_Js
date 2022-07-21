@@ -1,11 +1,22 @@
 var player1Score = 0; //Score of Player 1
 var player2Score = 0; //Score of Player 2
-var playerTurn = true; //To switch and track Player
+var playerTurn = selectRandomPlayer(); //To switch and track Player
 var player1WinCalculation = []; //Calculate the moves of the player 1
 var player2WinCalculation = []; //Calculate the moves of player 2
 // Keep track of the blocks
 var blocks = ['block-1', 'block-2', 'block-3', 'block-4', 'block-5', 'block-6', 'block-7', 'block-8', 'block-9'];
 var victory = false;
+
+//Random selection of player
+function selectRandomPlayer() {
+    let random = Math.round(Math.random());
+    if (random === 1) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
 
 // Function to Initialize the game and the parameters
 function startGame() {
